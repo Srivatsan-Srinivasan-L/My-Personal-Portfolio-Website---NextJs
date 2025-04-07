@@ -68,52 +68,94 @@ export const experienceInfo = [
   export const skillsData=[
     {
       id:1,
-      title:"HTML5",
-      image:"",
-      percent:"",
+      title:"HTML",
+      image:"/images/html5.png", 
+      percent:"80%",
     },
     {
       id:2,
-      title:"CSS3",
-      image:"",
-      percent:"",
+      title:"CSS",
+      image:"/images/css3.png",
+      percent:"80%",
     },
     {
       id:3,
-      title:"JS",
-      image:"",
-      percent:"",
+      title:"JavaScript",
+      image:"/images/js.png",
+      percent:"70%",
     },
     {
       id:4,
       title:"React Js",
-      image:"",
-      percent:"",
+      image:"/images/react.png",
+      percent:"70%",
     },
     {
       id:5,
-      title:"Tailwind CSS",
-      image:"",
-      percent:"",
+      title:"PHP",
+      image:"/images/PHP.png",
+      percent:"60%",
     },
     {
       id:6,
-      title:"Next Js",
-      image:"",
-      percent:"",
+      title:"Laravel",
+      image:"/images/Laravel.png",
+      percent:"80%",
     },
     {
       id:7,
-      title:"Laravel",
-      image:"",
-      percent:"",
+      title:"CodeIgniter",
+      image:"/images/CodeIgniter.png",
+      percent:"80%",
     },
     {
       id:8,
-      title:"Java",
-      image:"",
-      percent:"",
+      title:"Tailwind CSS",
+      image:"/images/Tailwind CSS.png",
+      percent:"70%",
     },
+    {
+      id:9,
+      title:"MYSQL",
+      image:"/images/MySQL.png",
+      percent:"70%",
+    },
+    {
+      id:10,
+      title:"Git",
+      image:"/images/Git.png",
+      percent:"90%",
+    },
+    {
+      id:11,
+      title:"Java",
+      image:"/images/Java.png",
+      percent:"60%",
+    },
+    {
+      id:12,
+      title:"Spring Boot",
+      image:"/images/Spring.png",
+      percent:"60%",
+    },
+  
   ];
+
+  // /app/Data/educationData.js
+export const educationInfo = [
+  {
+    degree: "Java Full Stack Training",
+    institute: "Greens Technology, Chennai",
+    year: "Feb 2024 - July 2024",
+    description: "Studied Core Java, J2EE, Spring Boot, and full stack development including building an E-commerce app."
+  },
+  {
+    degree: "B.Sc. Computer Science",
+    institute: "XYZ College",
+    year: "2019 - 2022",
+    description: "Learned programming fundamentals, DBMS, and participated in tech fests and projects."
+  }
+];
+
   
   
