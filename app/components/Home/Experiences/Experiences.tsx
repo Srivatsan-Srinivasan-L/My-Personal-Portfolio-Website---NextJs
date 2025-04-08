@@ -45,7 +45,7 @@ const Experiences = () => {
               <div className="text-white space-y-1">
                 <h3 className="text-lg font-semibold">{exp.role}</h3>
                 <p className="text-sm text-gray-400">{exp.company}</p>
-                <p className="text-sm text-gray-300">{exp.description}</p>
+                <p className="text-sm  text-gray-300">{exp.description}</p>
                 <p className="text-xs text-yellow-400">{exp.dates}</p>
               </div>
             </motion.div>

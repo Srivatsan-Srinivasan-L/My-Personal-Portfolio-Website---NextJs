@@ -5,6 +5,11 @@ import Experiences from './Home/Experiences/Experiences'
 import Project from './Home/Project/Project'
 import Skills from './Home/Skills/Skills'
 import Education from './Home/Education/Education'
+import Contact from './Home/Contact/Contact'
+import ScrollToUp from './Helper/ScrollToUp'
+
+
+
 
 const Home = () => {
   return (
@@ -15,6 +20,8 @@ const Home = () => {
          <Project/>
          <Skills/>
          <Education/>
+         <Contact/>
+         <ScrollToUp/>
     </div>
   )
 }

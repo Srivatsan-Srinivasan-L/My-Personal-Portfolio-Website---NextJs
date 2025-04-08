@@ -144,16 +144,16 @@ export const experienceInfo = [
   // /app/Data/educationData.js
 export const educationInfo = [
   {
-    degree: "Java Full Stack Training",
-    institute: "Greens Technology, Chennai",
-    year: "Feb 2024 - July 2024",
-    description: "Studied Core Java, J2EE, Spring Boot, and full stack development including building an E-commerce app."
+    degree: "Bachelors in Computer Science and Engineering (CSE)",
+    institute: "Mepco Schlenk Engineering College",
+    year: "(Aug 2019 - May 2025)",
+    description: "Computer Science and Engineering (CSE) is a field that studies the theory, design, development, and application of computational systems and software, including algorithms, programming languages, data structures, computer architecture, networks, AI, and Blockchain. CSE professionals design and analyze software systems, create efficient computational processes, and innovate new technologies."
   },
   {
-    degree: "B.Sc. Computer Science",
-    institute: "XYZ College",
-    year: "2019 - 2022",
-    description: "Learned programming fundamentals, DBMS, and participated in tech fests and projects."
+    degree: "Diploma in Electrical and Electronics Engineering (EEE) ",
+    institute: "Nagasiva Polytechnic college",
+    year: "2016 - 2019",
+    description: "A Diploma in Electrical and Electronics Engineering (EEE) is a 3-year program that provides technical knowledge and skills in electrical and electronic systems, including  Electrical Circuits, Electronics Devices, Control Systems, Electrical Machines 1 & 2. "
   }
 ];
 

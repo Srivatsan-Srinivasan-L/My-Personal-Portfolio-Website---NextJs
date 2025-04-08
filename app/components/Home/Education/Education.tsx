@@ -1,41 +1,29 @@
 'use client'
 import React from 'react';
 import { educationInfo } from '@/app/Data/data';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const Education = () => {
   return (
-    <section className="py-16 bg-[#0f0715] text-white">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
-        
-        {/* Left Image with Animation */}
-        <motion.div 
-          className="w-full md:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-          
-        </motion.div>
+    <section className="bg-[#0f0715] py-16 px-4 md:px-12 text-white">
+      <h2 className="text-3xl font-bold mb-12 text-center">Education</h2>
 
-        {/* Right Side Education List */}
-        <div className="w-full md:w-1/2 space-y-6">
-          <h2 className="text-3xl font-bold mb-4">Education</h2>
-          {educationInfo.map((edu, index) => (
-            <motion.div
-              key={index}
-              className="bg-[#1f1f1f] p-5 rounded-xl shadow-md hover:shadow-yellow-400 transition"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-            >
+      <div className="relative border-l-2 border-yellow-400 ml-6 md:ml-20">
+        {educationInfo.map((edu, index) => (
+          <div key={index} className="mb-10 ml-6 relative">
+            {/* Timeline Dot */}
+            <span className="absolute -left-6 top-6 w-4 h-4 bg-yellow-400 rounded-full border-2 border-white z-10" />
+
+            {/* Arrow pointing to card */}
+            <div className="absolute -left-2 top-6 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-yellow-400" />
+
+            {/* Education Card */}
+            <div className="bg-[#1f1f1f] p-5 rounded-md shadow-md transition-all duration-300 hover:shadow-yellow-400">
               <h3 className="text-xl font-semibold">{edu.degree}</h3>
-              <p className="text-yellow-400">{edu.institute} — {edu.year}</p>
-              <p className="text-sm text-gray-300 mt-2">{edu.description}</p>
-            </motion.div>
-          ))}
-        </div>
+              <p className="text-yellow-400 text-sm mt-1">{edu.institute} — {edu.year}</p>
+              <p className="text-gray-300 text-sm mt-2">{edu.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -27,8 +27,8 @@ const Projects = () => {
             />
             <div className="flex-1 flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-2xl text-gray-300 mb-3 justify-content">{project.description}</p>
+                <h3 className="text-2xl text-sm font-semibold mb-2">{project.title}</h3>
+                <p className="text-2xl text-sm text-gray-300 mb-3  justify-content">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, idx) => (
                     <span
@@ -40,7 +40,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-              <div className="text-2xl  flex gap-4 mt-4">
+              <div className="text-2xl text-sm flex gap-4 mt-4">
                 <a
                   href={project.github}
                   target="_blank"
