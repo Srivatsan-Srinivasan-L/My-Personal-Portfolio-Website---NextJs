@@ -34,7 +34,7 @@ const ContactSection = () => {
     if (result.success) {
       setStatus("✅ Your message has been sent successfully!");
       setShowToast(true);
-      e.target.reset();
+      (e.target as HTMLFormElement).reset();
     } else {
       setStatus("❌ Something went wrong. Please try again.");
       setShowToast(true);
