@@ -15,7 +15,7 @@ const ContactSection = () => {
   
     const data = new FormData(e.target as HTMLFormElement);
     const formData = {
-      access_key: "3af40b57-2c85-42f1-8366-68baacb63cbd",
+      access_key: "your-access-key",
       name: data.get("name"),
       email: data.get("email"),
       message: data.get("message"),
@@ -40,6 +40,7 @@ const ContactSection = () => {
       setShowToast(true);
     }
   };
+  
   
 
   return (
