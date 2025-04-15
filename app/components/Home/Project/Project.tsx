@@ -24,6 +24,8 @@ const Projects = () => {
             <Image
               src={project.image}
               alt={project.title}
+              width={400}
+              height={400}
               className="w-full md:w-[400px] h-auto rounded-lg cursor-pointer"
             />
             <div className="flex-1 flex flex-col justify-between">

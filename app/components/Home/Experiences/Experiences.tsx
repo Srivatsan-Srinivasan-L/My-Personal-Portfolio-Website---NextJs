@@ -19,7 +19,7 @@ const Experiences = () => {
           className="w-full md:w-1/2 flex justify-center"
         >
           <Image
-            src="/images/3.gif" // put your image in public/images/
+            src="/images/3.gif" 
             alt="Experience Illustration"
             width={500}
             height={500}
@@ -40,6 +40,8 @@ const Experiences = () => {
               <Image
                 src={exp.image}
                 alt={exp.company}
+                width={50}
+                height={50}
                 className="w-16 h-16 object-contain rounded-full shadow"
               />
               <div className="text-white space-y-1">

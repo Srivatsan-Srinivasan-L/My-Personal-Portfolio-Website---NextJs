@@ -83,7 +83,7 @@ const ContactSection = () => {
         {/* Right Contact Form */}
         <form onSubmit={handleSubmit} className="w-full md:w-1/2 space-y-6">
         <p className="text-center text-lg md:text-xl text-justify text-sm mt-5">
-  Feel free to reach out me — I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.
+  Feel free to reach out me — I&apos;m always open to discussing new projects, creative ideas, or opportunities to collaborate.
 </p>
           <div>
             <label className="block mb-1 font-medium text-base">Name</label>
