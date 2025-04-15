@@ -1,9 +1,6 @@
 'use client';
 import { BaseInfo } from '@/app/Data/data';
-import { motion } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
-import { FaDownload } from 'react-icons/fa';
-import { TypeAnimation } from 'react-type-animation';
 import SlideInWrapper from '../../Helper/SlideInWrapper';
 
 const Banner = () => {
