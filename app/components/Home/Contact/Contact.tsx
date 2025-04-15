@@ -10,17 +10,17 @@ const ContactSection = () => {
   const [status, setStatus] = useState("");
   const [showToast, setShowToast] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    const data = new FormData(e.target);
+  
+    const data = new FormData(e.target as HTMLFormElement);
     const formData = {
       access_key: "3af40b57-2c85-42f1-8366-68baacb63cbd",
       name: data.get("name"),
       email: data.get("email"),
       message: data.get("message"),
     };
-
+  
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -29,7 +29,7 @@ const ContactSection = () => {
       },
       body: JSON.stringify(formData),
     });
-
+  
     const result = await response.json();
     if (result.success) {
       setStatus("✅ Your message has been sent successfully!");
@@ -40,6 +40,7 @@ const ContactSection = () => {
       setShowToast(true);
     }
   };
+  
 
   return (
   
