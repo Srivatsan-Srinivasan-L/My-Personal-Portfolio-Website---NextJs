@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const Experiences = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#0f0715]">
+    <div id="Experiences"  className="pt-16 pb-16 bg-[#0f0715]">
       <SectionHeader>Experiences</SectionHeader>
 
       <div className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-[52px]">

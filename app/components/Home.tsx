@@ -11,10 +11,11 @@ import ScrollToUp from './Helper/ScrollToUp'
 
 
 
+
 const Home = () => {
   return (
     <div className='overflow-hidden'>
-         <Banner/>
+         <Banner/>     
          <About/>
          <Experiences/>
          <Project/>

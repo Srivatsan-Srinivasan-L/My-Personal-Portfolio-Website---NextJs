@@ -3,11 +3,13 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2';
+import HireMeModal from '../Home/HireMe/HireMeModal';
 
 type Props = {
     openNav: () => void;
 };
 const Nav = ({openNav}:Props) => {
+    const [isModalOpen, setModalOpen] = useState(false);
     const [navBg,setNavBg] = useState(false);
     useEffect(() => {
           const handler = () => {
@@ -46,9 +48,16 @@ const Nav = ({openNav}:Props) => {
         </div>
 
         <div className="flex items-center space-x-4">
-            <button className="md:px-10 md:py-3 px-8 py-3 cursor-pointer text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
-                Hire Me
-            </button>
+        <button
+        onClick={() => setModalOpen(true)}
+        className="md:px-10 md:py-3 px-8 py-3 cursor-pointer text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg"
+      >
+        Hire Me
+      </button>
+
+      
+
+      <HireMeModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
 
             <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-white lg:hidden"/>
         </div>

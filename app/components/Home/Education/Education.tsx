@@ -1,13 +1,21 @@
 'use client'
 import React from 'react';
+import SectionHeader from '../../Helper/SectionHeader'
 import { educationInfo } from '@/app/Data/data';
+import { motion } from 'framer-motion';
 
 const Education = () => {
   return (
     <section className="bg-[#0f0715] py-16 px-4 md:px-12 text-white">
-      <h2 className="text-3xl font-bold mb-12 text-center">Education</h2>
-
-      <div className="relative border-l-2 border-yellow-400 ml-6 md:ml-20">
+    
+      <SectionHeader>Education</SectionHeader>
+      <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="w-full"
+        >
+      <div className="relative border-l-2 border-yellow-400 ml-6 md:ml-20 mt-16">
         {educationInfo.map((edu, index) => (
           <div key={index} className="mb-10 ml-6 relative">
             {/* Timeline Dot */}
@@ -25,6 +33,7 @@ const Education = () => {
           </div>
         ))}
       </div>
+        </motion.div>
     </section>
   );
 };

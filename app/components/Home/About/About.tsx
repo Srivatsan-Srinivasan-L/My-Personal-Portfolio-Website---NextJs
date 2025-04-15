@@ -3,12 +3,14 @@ import SectionHeader from '../../Helper/SectionHeader'
 import { aboutInfo } from '@/app/Data/data'
 import { FaCheck } from 'react-icons/fa6'
 import Image from 'next/image'
+import SlideInWrapper from '../../Helper/SlideInWrapper'
 
 const About = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#050709]">
+    <div id="About" className="pt-16 pb-16 bg-[#050709]">
         <SectionHeader>About Me</SectionHeader>
-        <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
+        <SlideInWrapper>
+        <div  className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
             <div>
                 <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
                     {aboutInfo.title}
@@ -100,7 +102,7 @@ const About = () => {
                         </div>
                     </div>
         </div>
-        
+        </SlideInWrapper>
     </div>
   )
 }

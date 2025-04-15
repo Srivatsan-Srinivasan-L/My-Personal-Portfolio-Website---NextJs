@@ -4,6 +4,7 @@ import { FaLinkedin, FaInstagram, FaGithub, FaFigma } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import SectionHeader from "../../Helper/SectionHeader";
+import SlideInWrapper from "../../Helper/SlideInWrapper";
 
 const ContactSection = () => {
   const [status, setStatus] = useState("");
@@ -41,19 +42,21 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white py-16 px-6 md:px-16">
+  
+    <div id="Contacts" className="bg-gray-900 text-white py-16 px-6 md:px-16">
       <SectionHeader>Contact Me</SectionHeader>
-
+      <SlideInWrapper>
       <div className="flex flex-col md:flex-row gap-12 items-center justify-between relative">
         {/* Toast message */}
         {showToast && (
-          <div className="absolute -top-12 left-0 right-0 mx-auto max-w-xl bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded flex justify-between items-center shadow-md">
-            <span className="text-sm font-medium">{status}</span>
-            <button onClick={() => setShowToast(false)}>
-              <IoClose className="text-lg" />
-            </button>
-          </div>
-        )}
+    <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded flex justify-between items-center shadow-md z-50 max-w-md w-full">
+      <span className="text-sm font-medium">{status}</span>
+      <button onClick={() => setShowToast(false)}>
+        <IoClose className="text-lg" />
+      </button>
+    </div>
+  )}
+  
 
         {/* Left Image + Icons */}
         <div className="w-full md:w-1/2 flex flex-col items-center text-center gap-6">
@@ -76,8 +79,7 @@ const ContactSection = () => {
           </div>
     
         </div>
-
-
+      
         {/* Right Contact Form */}
         <form onSubmit={handleSubmit} className="w-full md:w-1/2 space-y-6">
         <p className="text-center text-lg md:text-xl text-justify text-sm mt-5">
@@ -117,14 +119,17 @@ const ContactSection = () => {
             Send Message
           </button>
         </form>
+       
       </div>
-
+     </SlideInWrapper>
       <hr className="mt-5 border-gray-700" />
 <p className="text-center text-2xl text-sm mt-4 text-white">
   © 2025 All Rights Reserved ❤️ Srivatsan.
 </p>
 
+
     </div>
+   
   );
 };
 

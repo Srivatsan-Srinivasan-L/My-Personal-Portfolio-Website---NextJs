@@ -7,7 +7,7 @@ import SectionHeader from "../../Helper/SectionHeader";
 
 const Projects = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#0f0715] text-white">
+    <div id="Projects" className="pt-16 pb-16 bg-[#0f0715] text-white">
       
       <SectionHeader>Projects</SectionHeader>
 
@@ -45,7 +45,7 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-yellow-400 flex items-center gap-1"
+                  className="text-white hover:text-yellow-400 flex items-center gap-1 no-underline"
                 >
                   <FaGithub /> GitHub
                 </a>

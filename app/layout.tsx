@@ -6,6 +6,7 @@ import AnimatedCursor from "react-animated-cursor";
 
 
 
+
 const font = Sora({
   weight: ['100','200','300','400','500','600','700','800'],
   subsets: ['latin']
@@ -13,8 +14,14 @@ const font = Sora({
 
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "My Portfolio Website | Srivatsan S",
   description: "portfolio with next js",
+  icons:[
+    {
+      url:'images/sri.ico',
+      href:'images/sri.ico'
+    }
+  ]
 };
 
 export default function RootLayout({
