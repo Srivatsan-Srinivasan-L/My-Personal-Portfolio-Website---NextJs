@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import {  Sora } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "./components/Navbar/ResponsiveNav";
-import AnimatedCursor from "react-animated-cursor";
+import AnimatedCursor from "./components/Helper/AnimatedCursor"; // ✅ your framer-motion cursor
+
 
 
 
@@ -35,19 +36,8 @@ export default function RootLayout({
         className={font.className}
       >
         <div className="hidden md:block">
-          <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
-          innerScale={2}
-          outerScale={2}
-          outerAlpha={0}
-          innerStyle={{
-            backgroundColor:"white",
-          }}
-          outerStyle={{
-            border:'3px solid white'
-          }}
-          />
+        <AnimatedCursor /> {/* ✅ Replaces old animated-cursor */}
+
         </div>
          <ResponsiveNav/>
         {children}
