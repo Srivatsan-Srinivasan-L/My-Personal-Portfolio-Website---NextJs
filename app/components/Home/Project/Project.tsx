@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { projectInfo } from "@/app/Data/data";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import SectionHeader from "../../Helper/SectionHeader";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -20,7 +21,7 @@ const Projects = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col md:flex-row bg-[#1c1324] p-6 rounded-2xl shadow-lg gap-6"
           >
-            <img
+            <Image
               src={project.image}
               alt={project.title}
               className="w-full md:w-[400px] h-auto rounded-lg cursor-pointer"

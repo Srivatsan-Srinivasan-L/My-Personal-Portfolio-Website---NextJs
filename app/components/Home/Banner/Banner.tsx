@@ -2,6 +2,7 @@
 import { BaseInfo } from '@/app/Data/data';
 import React, { useState, useEffect } from 'react';
 import SlideInWrapper from '../../Helper/SlideInWrapper';
+import Image from 'next/image';
 
 const Banner = () => {
   
@@ -80,7 +81,7 @@ const Banner = () => {
           {/* Profile Image */}
           <SlideInWrapper>
           <div className="mx-auto hidden lg:block rounded-[3rem] border-[5.5px] border-blue-950 overflow-x-hidden">
-            <img
+            <Image
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
               width={520}

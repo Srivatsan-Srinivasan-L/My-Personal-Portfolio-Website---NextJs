@@ -37,7 +37,7 @@ const Experiences = () => {
               transition={{ duration: 0.7, delay: index * 0.2 }}
               className="flex items-start gap-4 bg-[#1a0d2d] rounded-2xl p-5 shadow-xl"
             >
-              <img
+              <Image
                 src={exp.image}
                 alt={exp.company}
                 className="w-16 h-16 object-contain rounded-full shadow"
