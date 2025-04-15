@@ -109,7 +109,7 @@ const ContactSection = () => {
             <label className="block mb-1 font-medium text-base">Message</label>
             <textarea
               name="message"
-              rows="4"
+              rows={4}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 text-base"
             />

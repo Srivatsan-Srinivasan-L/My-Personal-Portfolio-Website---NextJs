@@ -24,24 +24,26 @@ const Banner = () => {
     const interval = setInterval(() => {
       setGreetingIndex((prev) => (prev + 1) % greetings.length);
     }, 2000);
-
+  
     const timeout = setTimeout(() => {
       clearInterval(interval);
       setGreetingIndex(-1); // show "I am" after greetings
     }, 4000);
-
+  
     return () => {
       clearInterval(interval);
       clearTimeout(timeout);
     };
-  }, []);
+  }, [greetings.length]); // ✅ add dependency
+  
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTextIndex((prev) => (prev + 1) % animatedTextList.length);
     }, 4000);
     return () => clearInterval(timer);
-  }, []);
+  }, [animatedTextList.length]); // ✅ add dependency
+  
 
   return (
  
