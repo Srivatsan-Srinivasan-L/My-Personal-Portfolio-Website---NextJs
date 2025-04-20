@@ -41,8 +41,8 @@ export const experienceInfo = [
       title: "Personal Budget Tracker",
       image: "/images/project1.png", // Place your image in public folder
       description:
-        "A full-featured budget tracking system built with CodeIgniter 4, MySQL, and AJAX for real-time updates. Users can manage expenses and set monthly limits.",
-      tech: ["CodeIgniter 4", "MySQL", "AJAX", "Bootstrap"],
+        "A full-featured budget tracking system built with React JS, CSS for real-time updates. Users can manage expenses and set monthly limits.",
+      tech: ["React Js", "CSS"],
       github: "https://github.com/Srivatsan-Srinivasan-L/Personal-Budget-Tracker-System",
       live: "https://yourdomain.com/budget-tracker",
     },
