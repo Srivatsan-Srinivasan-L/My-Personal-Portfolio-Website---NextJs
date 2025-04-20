@@ -43,8 +43,8 @@ export const experienceInfo = [
       description:
         "A full-featured budget tracking system built with React JS, CSS for real-time updates. Users can manage expenses and set monthly limits.",
       tech: ["React Js", "CSS"],
-      github: "https://github.com/Srivatsan-Srinivasan-L/Personal-Budget-Tracker-System",
-      live: "https://yourdomain.com/budget-tracker",
+      github: "https://github.com/Srivatsan-Srinivasan-L/Expense-Tracker-ReactJs",
+      live: "https://expense-tracker-react-js-six.vercel.app/",
     },
     {
       title: "Nike Shoes iOS App UI Design",
