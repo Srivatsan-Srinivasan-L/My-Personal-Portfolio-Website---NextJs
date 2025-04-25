@@ -2,7 +2,7 @@ export const BaseInfo = {
     name: "Srivatsan",
     position:"React JS Developer",
     description:
-    "Aspiring React.js Developer seeking an opportunity to contribute my skills and knowledge in front-end development. Passionate about building responsive and user-friendly web applications while continuously learning and improving.",
+    "Aspiring front-end developer seeking an opportunity to contribute to building responsive and user-friendly web applications, while continuously learning and growing.",
     profilePic:"/images/sri7.jpg",
 };
 
